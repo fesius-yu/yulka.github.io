@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta>
+		<title>Юляша</title>
+		<meta charset='UTF-8'>
+		<style>
+			a.nubex {
+			color: #0f73dc;
+			user-select: none; /* Убираем текстовое выделение */
+			text-decoration: none;	/* Убираем подчеркивание */
+			outline: none; /* Убираем контур вокруг ссылки */
+			background-color: none; /* Цвет фона */
+			padding: 1 2; /* Отступ от текста до рамки */
+		}
+			a.nubex:active {
+				background-color: #ee6206; /* Цвет кнопки при нажатии */
+			}
+			a.nubex:hover {
+				background-color: #purple; /* Цвет кнопки при наведении курсора */
+			}
+	 </style>
+
+
+
+	</head>
+	<body text = 'white'>
+
+									<!--фон -->
+				<style>
+    	    h1{text-align:center;color:#c606da;}
+            h2{text-align:center;color:#ad54dd;}
+            body{background-color: #ffd1dc;}
+        </style>
+
+				<h1>А сколько же времени?</h1>
+
+								<!--кнопки в хедере-->
+				<table border='4' width='700'>
+					<tr>
+            <td>
+              <a href='first.html' class='nubex'><big>Юляша<big></a>
+            </td>
+						<td>
+							<form>
+							<a href='fotochki.html' class='nubex'><big>наши фоточки</big></a>
+						</form>
+						</td>
+						<td>
+							<a href='timer.html' class='nubex'><b>таймер<b></a>
+						</td>
+					</tr>
+				</table>
+
+									<!--форма(((-->
+				<!--<select>
+					<option>Сколько осталось до...</option>
+  				<option value='2'>1 года отношений</option>
+  				<option value='3'>Дня Рождения Юляши</option>
+					<option value='4'>Дня Рождения Ильи</option>
+				</select>
+
+				<script>
+					if (document.getElementById("sel").options.selectedIndex == 1) {
+						document.getElementById("demo").innerHTML = days + ":" + hours + ":"
+					  + minutes + ":" + seconds + "";
+					}
+				</script>-->
+
+
+
+
+
+
+						<!--таймер -->
+				<h2 align='center' text='50'><big>До 1 года осталось:</big></h2>
+
+				<h2 style='color:#f900a4' id="demo" align='center'></h2>
+				<script name='mar23'>
+				 var countDownDate = new Date("Mar 23, 2020 23:30:00").getTime();
+				 var x = setInterval(function() {
+				  var now = new Date().getTime();
+				  var distance = countDownDate - now;
+				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				  document.getElementById("demo").innerHTML = days + ":" + hours + ":"
+				  + minutes + ":" + seconds + "";
+				  if (distance < 0) {
+				    clearInterval(x);
+				    document.getElementById("demo").innerHTML = "Спасибо за этот год, Любимая!";
+				   }
+				 }, 1000);
+				</script>
+				<hr>
+						<!--таймер -->
+				<h2 align='center' text='50'><big>До Дня рождения Юляши:</big></h2>
+
+				<h2 style='color:#43adf9' id="d2" align='center'></h2>
+				<script>
+				 var countDownD2 = new Date("Mar 14, 2020 00:00:00").getTime();
+				 var y = setInterval(function() {
+					var now2 = new Date().getTime();
+					var dist2 = countDownD2 - now2;
+					var days2 = Math.floor(dist2 / (1000 * 60 * 60 * 24));
+					var hours2 = Math.floor((dist2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var min2 = Math.floor((dist2 % (1000 * 60 * 60)) / (1000 * 60));
+					var sec2 = Math.floor((dist2 % (1000 * 60)) / 1000);
+					document.getElementById("d2").innerHTML = days2 + ":" + hours2 + ":"
+					+ min2 + ":" + sec2 + "";
+					if (dist2 < 0) {
+						clearInterval(y);
+						document.getElementById("d2").innerHTML = "С Днем Рождения, моя любимая кучка атомов!)";
+					 }
+				 }, 1000);
+			 </script>
+			 <hr>
+			 			<!--таймер -->
+			 <h2 align='center'><big>До Дня рождения Илюши:</big></h2>
+			 <h2 style='color:#a5a5f9' id="de3" align='center'></h2>
+				<script>
+					var countD3 = new Date("nov 19, 2020 00:00:00").getTime();
+					var z = setInterval(function() {
+						  var no3 = new Date().getTime();
+						  var distan3 = countD3 - no3;
+						  var da3 = Math.floor(distan3 / (1000 * 60 * 60 * 24));
+						  var ho3 = Math.floor((distan3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						  var mi3 = Math.floor((distan3 % (1000 * 60 * 60)) / (1000 * 60));
+						  var se3 = Math.floor((distan3 % (1000 * 60)) / 1000);
+						  document.getElementById("de3").innerHTML = da3 + ":" + ho3 + ":"
+						  + mi3 + ":" + se3 + "";
+
+						 }, 1000);
+						</script>
+						<img src=dr2.jpg width='225'>
+						<img src=dr1.jpg width='225'>
+						<img src=l.jpg width='225'>
+
+	</body>
+</html>
